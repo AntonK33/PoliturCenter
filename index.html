@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Центр Полировки Автомобилей</title>
+    <head rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Профессиональная полировка автомобилей</h1>
+            <p>Восстановление блеска вашего автомобиля с помощью передовых технологий и качественных материалов.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Полировка кузова</h3>
+                <p>Восстановление идеального блеска вашего автомобиля с помощью полировочных средств.</p>
+            </div>
+            <div class="service-item">
+                <h3>Полировка фар</h3>
+                <p>Восстановление прозрачности и яркости фар, улучшение видимости на дороге.</p>
+            </div>
+            <div class="service-item">
+                <h3>Детейлинг интерьера</h3>
+                <p>Чистка и уход за салоном автомобиля, восстановление кожи и тканей.</p>
+            </div>
+            <div class="service-item">
+                <h3>Защита покрытия</h3>
+                <p>Нанесение защитных покрытий для кузова автомобиля, сохранение блеска и защиты от внешних воздействий.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Результаты нашей работы</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="before1.jpg" alt="До полировки">
+                <p>До</p>
+            </div>
+            <div class="gallery-item">
+                <img src="after1.jpg" alt="После полировки">
+                <p>После</p>
+            </div>
+            <!-- Добавьте дополнительные изображения для "до" и "после" -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form action="#" method="POST">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Центр Полировки Автомобилей</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
