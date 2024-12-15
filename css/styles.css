@@ -108,28 +108,28 @@ display: grid;
 }
 
 .service-item-body {
-    background: url('/image/pexels-tima-miroshnichenko-6872609.jpg') no-repeat center center/cover;
+    background: url('../image/pexels-tima-miroshnichenko-6872609.jpg') no-repeat center center/cover;
     padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
         background-color: #fff;
 }
 .service-item-scheinwerfer {
-    background: url('/image/pexels-tima-miroshnichenko-6873186.jpg') no-repeat center center/cover;
+    background: url('../image/pexels-tima-miroshnichenko-6873186.jpg') no-repeat center center/cover;
     padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
         background-color: #fff;
 }
 .service-item-bodypolish {
-    background: url('/image/pexels-quentin-martinez-2147503099-29633972.jpg') no-repeat center center/cover;
+    background: url('../image/pexels-quentin-martinez-2147503099-29633972.jpg') no-repeat center center/cover;
     padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
         background-color: #fff;
 }
 .service-item-inner {
-    background: url('/image/pexels-tima-miroshnichenko-6872585.jpg') no-repeat center center/cover;
+    background: url('../image/pexels-tima-miroshnichenko-6872585.jpg') no-repeat center center/cover;
     padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
