@@ -176,6 +176,10 @@ form label {
  *::after {
      box-sizing: border-box;
  }
+       
+ .contactUns{
+    text-align: center;
+ }
 form input, form textarea {
     width: 100%;
         padding: 10px;
