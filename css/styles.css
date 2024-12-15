@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: #f4f4f4;
     color: #333;
 }
@@ -19,35 +19,40 @@ a {
 
 header {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 10px 0;
+   
+           
+        
 }
 
 header nav ul {
+list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 0;
 }
 
 header nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: #fff;
-    font-size: 18px;
+    color: white;
+        text-decoration: none;
+        font-size: 16px;
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('/image/pexels-tima-miroshnichenko-6873186.jpg') no-repeat center center/cover;
     color: white;
-    padding: 80px 0;
+    padding: 50px 10%;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 18px;
+  
 }
 
 .hero p {
@@ -61,19 +66,40 @@ header nav ul li a {
 }
 
 .services {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
 }
 
-.service-item {
-    width: 22%;
-    background-color: #f9f9f9;
+.service-item-body {
+    background: url('/image/pexels-tima-miroshnichenko-6872609.jpg') no-repeat center center/cover;
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
 }
-
+.service-item-scheinwerfer {
+    background: url('/image/pexels-tima-miroshnichenko-6873186.jpg') no-repeat center center/cover;
+    padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+}
+.service-item-bodypolish {
+    background: url('/image/pexels-quentin-martinez-2147503099-29633972.jpg') no-repeat center center/cover;
+    padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+}
+.service-item-inner {
+    background: url('/image/pexels-tima-miroshnichenko-6872585.jpg') no-repeat center center/cover;
+    padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+}
 #gallery {
     padding: 50px 20px;
     text-align: center;
@@ -81,14 +107,14 @@ header nav ul li a {
 }
 
 .gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .gallery-item {
-    width: 45%;
-    margin: 10px;
+    width: 48%;
+        text-align: center;
 }
 
 .gallery-item img {
@@ -97,38 +123,48 @@ header nav ul li a {
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     display: block;
-    margin-bottom: 10px;
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #333;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        color: #333;
 }
 
 form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 100%;
+        padding: 12px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px;
+        padding: 20px;
+        background-color: #333;
+        color: white;
 }
