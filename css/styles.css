@@ -79,7 +79,7 @@ header nav ul li a {
 }
 
 .hero {
-    background: url('./image/pexels-tima-miroshnichenko-6873186.jpg') no-repeat center center/cover;
+    background: url('image/pexels-tima-miroshnichenko-6873186.jpg') no-repeat center center/cover;
     color: white;
     padding: 50px 10%;
     text-align: center;
