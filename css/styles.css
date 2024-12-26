@@ -238,31 +238,77 @@ a {
 
     .nav li {
         margin: 10px 0;
+        opacity: 0;
+            /* Пункты меню изначально невидимы */
+            transform: translateY(20px);
+            /* Смещаем пункты вниз */
+            animation: slideIn 0.5s forwards;
+            /* Анимация для каждого пункта */
     }
-
+        .nav li:nth-child(1) {
+            animation-delay: 0.2s;
+            /* Задержка для первого пункта */
+        }
+    
+        .nav li:nth-child(2) {
+            animation-delay: 0.4s;
+            /* Задержка для второго пункта */
+        }
+    
+        .nav li:nth-child(3) {
+            animation-delay: 0.6s;
+            /* Задержка для третьего пункта */
+        }
+    
+        .nav li:nth-child(4) {
+            animation-delay: 0.8s;
+            /* Задержка для четвертого пункта */
+        }
     .nav a {
         font-size: 16px;
         /* Меньший размер шрифта на мобильных */
     }
-
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                /* Пункт становится видимым */
+                transform: translateY(0);
+                /* Пункт возвращается на свое место */
+            }
+        }
     /* Кнопка для открытия меню на мобильных */
-    .menu-toggle {
-        display: block;
-        background-color: rgba(0, 0, 0, 0.7);
-        border: none;
-        padding: 10px;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    /* Стиль кнопки при открытом меню */
-    .menu-toggle.open {
-        background-color: #f7a400;
-        /* Цвет кнопки при открытии */
-    }
+        .menu-toggle {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 50px;
+        
+            height: 50px;
+            
+            border-radius: 50%;
+           
+            position: relative;
+        }
+    
+        .menu-toggle .fingerprint-icon {
+            width: 100%;
+            /* Изображение займет всю ширину кнопки */
+            height: 100%;
+            /* Изображение займет всю высоту кнопки */
+            object-fit: cover;
+            /* Обеспечивает правильное масштабирование изображения */
+        }
+    
+        /* Стиль кнопки при открытом меню */
+        .menu-toggle.open {
+            background-color: #f7a400;
+            /* Цвет кнопки при открытии */
+        }
+        
 }
 
 
