@@ -62,7 +62,7 @@ body {
 .logo {
     font-family: "Ralewey", sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 1.2;
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -86,7 +86,7 @@ body {
         -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 }
 
@@ -281,7 +281,7 @@ a {
     /* Кнопка для открытия меню на мобильных */
         .menu-toggle {
             display: block;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.4);
             border: none;
             padding: 10px;
             cursor: pointer;
