@@ -451,7 +451,7 @@ header nav ul li a {
         background-color: #fff;
 }
 .service-item-inner {
-    background: url('../image/pexels-tima-miroshnichenko-6872585.jpg') no-repeat center center/cover;
+    background: url('../image/IMG_3562.JPG') no-repeat center center/cover;
     padding: 20px;
     min-height: 140px;
         width: 100%;
@@ -467,17 +467,33 @@ header nav ul li a {
            
         }
 }
+/* .ergebnis_gallery{
 
+} */
 .gallery {
-display: flex;
-    justify-content: center;
-    margin-top: 30px;
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 изображения в ряду */
+    gap: 16px;
+    /* промежуток между изображениями */
+    padding: 16px;
+    max-width: 1200px;
+    /* Ограничение ширины для больших экранов */
+    margin: 0 auto;
     
 }
-
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 изображения в ряду для мобильных */
+    }
+}
 .gallery-item {
-    width: 48%;
-        text-align: center;
+    width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        /* Радиус углов для изображений */
 }
 
 .gallery-item img {
@@ -531,6 +547,73 @@ form button {
 form button:hover {
     background-color: #555;
 }
+
+.info_container{
+    font-family: sans-serif;
+        background-color: black;
+        color: white;
+}
+
+.info_h1_h2{
+color: #ffcc00;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.info_h3{color: #ffcc00;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.info_p{
+    font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
+        /* Выравнивание текста по левому краю */
+        padding-left: 20px;
+        /* Отступ слева */
+        position: relative;
+}
+
+.info_p::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 3px;
+     height: 100%;
+     background-color: red;
+     /* Красная линия вдоль абзаца */
+ }
+
+@media (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+/* .info_section{
+
+   
+       
+} */
+
+
 
 footer {
     text-align: center;
